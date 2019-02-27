@@ -105,7 +105,11 @@
     <string name="action_info">Info</string>
     <string name="action_delete">Delete</string>
     <string name="action_cancel">Cancel</string>
+<<<<<<< HEAD
 	<string name="action_changelog">Changelog</string>
+=======
+    <string name="action_changelog">Changelog</string>
+>>>>>>> 4008406... Updater: Add changelog dialog
 
     <string name="confirm_delete_dialog_title">Delete file</string>
     <string name="confirm_delete_dialog_message">Delete the selected update file?</string>
@@ -150,11 +154,12 @@
     <string name="ongoing_channel_title">Ongoing downloads</string>
     <string name="update_failed_channel_title">Update failed</string>
 
-	<string name="changelog_url" translatable="false">https://raw.githubusercontent.com/Xtended-Devices/DevicesChangelog/xq/<xliff:g id="device_name">%1$s</xliff:g>.txt</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/Xtended-Devices/DevicesChangelog/xq/<xliff:g id="device_name">%1$s</xliff:g>.md</string>
     <string name="changelog_fail">Failed to retrieve changelog or changelog unavailable</string>
 
     <!-- Maintainer-->
     <string name="maintainer_name">Whom To Blame: <xliff:g id="maintainer" example="Subins Mani">%1$s</xliff:g></string>
 
     <string name="menu_show_changelog">Show changelog</string>
+
 </resources>
