@@ -23,6 +23,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -31,11 +32,13 @@ import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.preference.PreferenceManager;
 
 import com.colt.updater.R;
 import com.colt.updater.UpdaterReceiver;
 import com.colt.updater.UpdatesActivity;
 import com.colt.updater.misc.BuildInfoUtils;
+import com.colt.updater.misc.Constants;
 import com.colt.updater.misc.StringGenerator;
 import com.colt.updater.misc.Utils;
 import com.colt.updater.model.UpdateInfo;
@@ -404,6 +407,13 @@ public class UpdaterService extends Service {
                 mNotificationBuilder.setOngoing(false);
                 mNotificationBuilder.setAutoCancel(true);
                 mNotificationManager.notify(NOTIFICATION_ID, mNotificationBuilder.build());
+
+                SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+                boolean deleteUpdate = pref.getBoolean(Constants.PREF_AUTO_DELETE_UPDATES, false);
+                if (deleteUpdate) {
+                    mUpdaterController.deleteUpdate(update.getDownloadId());
+                }
+
                 tryStopSelf();
                 break;
             }
