@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
-        app:layout_behavior="com.colt.updater.ui.FlingBehavior">
+        app:layout_behavior="com.xtended.updater.ui.FlingBehavior">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
@@ -41,7 +41,7 @@
                     android:layout_centerHorizontal="true"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:src="@drawable/ic_colt"
+                    android:src="@drawable/ic_xtended"
                     android:tint="?android:attr/colorAccent"
                     />
 

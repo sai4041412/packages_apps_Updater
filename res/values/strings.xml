@@ -16,11 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Updater</string>
-    <string name="display_name">ColtEnigma Updates</string>
+    <string name="display_name">Xtended Updates</string>
 
     <!-- Directory where the update files will be downloaded and stored.
          WARNING: The application can and will delete any unknown file. -->
-    <string name="download_path" translatable="false">/data/colt_updates/</string>
+    <string name="download_path" translatable="false">/data/xtended_updates/</string>
 
     <!-- Directory where the downloads will be exported to.
          The path is relative to the root of the external storage.-->
@@ -32,7 +32,7 @@
           {type} - Build type
           {incr} - Incremental version
     -->
-    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/ColtOS-Devices/official_devices/c10/builds/{device}.json</string>
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/Xtended-Devices/official_devices/xq/builds/{device}.json</string>
 
     <string name="verification_failed_notification">Verification failed</string>
     <string name="verifying_download_notification">Verifying update</string>
@@ -88,13 +88,13 @@
 
     <string name="snack_update_not_installable">This update can\'t be installed on top of the current build.</string>
 
-    <string name="header_title_text">ColtEnigma</string>
+    <string name="header_title_text">Xtended Updater</string>
     <string name="header_android_version">Android Version: <xliff:g id="version" example="10">%1$s</xliff:g></string>
     <string name="header_security_patch">Security patch level: <xliff:g id="patch" example="May 5 2020">%1$s</xliff:g></string>
     <string name="header_last_updates_check">Last successful check for update at <xliff:g id="time" example="01:23">%1$s</xliff:g></string>
 
-    <string name="list_build_version">ColtEnigma <xliff:g id="version" example="Meteor">%1$s</xliff:g></string>
-    <string name="list_build_version_date">ColtEnigma <xliff:g id="version" example="v6.0">%1$s</xliff:g> - <xliff:g id="date" example="March 16, 2020">%2$s</xliff:g></string>
+    <string name="list_build_version">Xtended <xliff:g id="version" example="Meteor">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Xtended <xliff:g id="version" example="v6.0">%1$s</xliff:g> - <xliff:g id="date" example="March 16, 2020">%2$s</xliff:g></string>
     <string name="list_device_name">Device: <xliff:g id="device" example="ginkgo">%1$s</xliff:g></string>
 
     <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
@@ -154,7 +154,7 @@
     <string name="ongoing_channel_title">Ongoing downloads</string>
     <string name="update_failed_channel_title">Update failed</string>
 
-    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/ColtOS-Devices/official_devices/c10/changelogs_<xliff:g id="device_name">%1$s</xliff:g>.txt</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/Xtended-Devices/official_devices/c10/changelogs_<xliff:g id="device_name">%1$s</xliff:g>.txt</string>
     <string name="changelog_fail">Failed to retrieve changelog or changelog unavailable</string>
 
     <!-- Maintainer-->

@@ -1,1 +1,1 @@
--keep class org.colt.updater.ui.FlingBehavior { *; }
+-keep class org.xtended.updater.ui.FlingBehavior { *; }
